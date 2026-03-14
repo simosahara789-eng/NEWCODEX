@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reverb-api-control-tool"
+version = "0.1.0"
+description = "Professional CLI and SDK wrapper to control Reverb API operations"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+reverbctl = "reverb_tool.cli:main"
+
+[tool.setuptools]
+packages = ["reverb_tool"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
